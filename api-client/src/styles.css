@@ -1,0 +1,8 @@
+html{ 
+    height: 100% !important;
+    background-image: url('/assets/Imagen/Fondo.png');    
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}

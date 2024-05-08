@@ -1,0 +1,15 @@
+<body>
+  <div class="login-box">
+    <form [formGroup]="login">
+      <h1>Login Here</h1>
+      <label for="username">Username</label>
+      <input type="text" placeholder="Ingresa Usuario" formControlName="usuario">
+      <label for="password">Password</label>
+      <input type="password" placeholder="Ingresar Clave" formControlName="clave">
+      <button type="submit" (click)="crearLogin()" [disabled]="!login.valid">Log In</button>
+      <br>
+      <br>
+      <label style="color: red; font-size: 12px;">{{mensaje}}</label>
+    </form>
+  </div>
+</body>

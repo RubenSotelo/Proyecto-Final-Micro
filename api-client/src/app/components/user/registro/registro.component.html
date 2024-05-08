@@ -1,0 +1,16 @@
+<body>
+  <div class="login-box">
+    <form [formGroup]="registro">
+      <h1>REGISTRO</h1>
+      <label>Nombre</label>
+      <input type="text" placeholder="Ingrese Nombre" formControlName="nombre">
+      <label>Usuario</label>
+      <input type="text" placeholder="Ingrese Usuario" formControlName="usuario">
+      <label>Clave</label>
+      <input type="password" placeholder="Ingrese Password" formControlName="clave">
+      <button type="submit" (click)="crearRegistro()" [disabled]="!registro.valid">Registrar</button>
+      <br>
+      <label style="color: red; font-size: 12px;">{{mensaje}}</label>
+    </form>
+  </div>
+</body>

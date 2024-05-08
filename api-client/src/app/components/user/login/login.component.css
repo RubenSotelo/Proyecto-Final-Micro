@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/assets/Imagen/Fondo.png');
+    font-family: Segoe UI;
+    height: 100vh;
+}
+  
+  .login-box {
+    width: 320px;
+    height: 400px;
+    background: rgb(66, 66, 66, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 15px;
+  }
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-box button {
+    border: none;
+    outline: none;
+    width: 260px;
+    height: 40px;
+    background: #D4AC0D;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box button:hover {
+    cursor: pointer;
+    background: #9A7D0A;
+    color: #000;
+  }
+  
+  .login-box button:disabled {
+    cursor: pointer;
+    background:  rgb(212, 172, 13, 0.5);
+    color:white;
+  }
+
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  
+  .login-box a:hover {
+    color: black;
+  }

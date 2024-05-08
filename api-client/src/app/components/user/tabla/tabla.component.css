@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/Imagen/Fondo.png');
+}
+.table{
+    width: 90%;
+}
+
+.table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.table_header p{
+    color: white;
+    font-size: 20px;
+    font-family: 'poppins-bold', sans-serif;
+    font-weight:700
+}
+
+.add_new{
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(154, 125, 10);
+}
+
+.add_new:hover{
+    padding: 10px 20px;
+    color: black;
+    background-color: rgb(154, 125, 10, 0.5);
+}
+
+.sign_out{
+    color: white;
+    background-color: transparent;
+}
+.table_section{
+    height: 500px;
+    overflow: auto;
+}
+
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    margin: 2px;
+}
+
+td button:nth-child(1){
+    background-color: teal;
+}
+
+td button:nth-child(2){
+    background-color: brown;
+}
+
+input{
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid cornflowerblue;
+    border-radius: 6px;
+    color: cornflowerblue;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: rgb(154, 125, 10, 0.5);
+}
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+tbody {
+    background-color: rgb(66, 66, 66, 0.5);
+}
+
+
+th, td{
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+    color: white;
+}
+
+tr:hover td{
+    color: rgb(154, 125, 10);
+    cursor: pointer;
+    background-color: rgb(66, 66, 66);
+}
+
+::placeholder{
+    color: cornflowerblue;
+}
+
+::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgb(0,0,0, 0.3); 
+}
+
+::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 6px rgb(0,0,0, 0.3); 
+}

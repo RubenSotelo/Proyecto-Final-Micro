@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="table">
+        <div class="table_header">
+            <p>{{login}}
+                <button class="sign_out" (click)="sign_out()">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </button>
+            </p>
+            <div>
+                <button class="add_new" type="button" (click)="registro()">Add User</button>
+            </div>
+        </div>
+        <div class="table_section" *ngIf="usuarios.length > 0"> 
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Nombre</th>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let usuario of usuarios">
+                        <td>{{usuario.id_user}}</td>
+                        <td>{{usuario.nombre}}</td>
+                        <td>{{usuario.usuario}}</td>
+                        <td>**********</td>
+                        <td>
+                            <button (click)="actualizar(usuario.id_user!)"><i class="fa fa-pencil-square-o"></i></button>
+                            <button (click)="eliminar(usuario.id_user!)"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="usuarios.length == 0">
+          <H1> No Hay Usuarios Registrados</H1>
+        </div>
+    </div>
+</body>
+</html>

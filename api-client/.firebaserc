@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "micro-login-1dc6e": {
+      "hosting": {
+        "api-client": [
+          "micro-login-1dc6e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "micro-login-1dc6e"
+  }
+}
